@@ -7,7 +7,7 @@
     width: 600px;
     height: auto;
     background: whitesmoke;
-
+    border-bottom: 2px rgba(225, 221, 221, 0.851) solid;
 
     display: flex;
     justify-content: center;
@@ -22,6 +22,7 @@ input{
   
     border: none;
     width: 100%;
+    border-bottom: 2px rgba(206, 202, 202, 0.851) solid;
 
    
 }
@@ -31,7 +32,7 @@ input:focus {
   }
 
 .listContainer{
-    background: gray;
+
     width: 100%;
 
     display: flex;
@@ -44,12 +45,16 @@ input:focus {
     width: 100%;
     height: 50px;
     color: black;
-    background: yellow;
-
+    border-bottom: 2px rgba(206, 202, 202, 0.851) solid;
     padding: 5px 10px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+}
+
+.deleteButton{
+    transition: display  2s ease-in-out 0.5s;
+ 
 }
