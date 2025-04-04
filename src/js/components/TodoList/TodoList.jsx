@@ -81,7 +81,6 @@ const TodoList = () => {
       const data = await response.json();
       fetchUserAndTodo();
 
-      console.log(data);
     } catch (error) {
       console.log(error);
     } finally {
@@ -109,11 +108,13 @@ const TodoList = () => {
   const deleteAllTodos = async () => {
     setIsLoading(true);
     try {
-      await fetch(`https://playground.4geeks.com/todo/user/juanespinoh`, {
+      await fetch(`https://playground.4geeks.com/todo/users/juanespinoh`, {
         method: "DELETE",
       })
         .then(() => {
-          fetch(`https://playground.4geeks.com/todo/user/juanespinoh`);
+          fetch(`https://playground.4geeks.com/todo/users/juanespinoh`,{
+            method: "POST",
+          });
         })
         .then(() => fetchUserAndTodo())
         .catch((err) => console.log(err));
