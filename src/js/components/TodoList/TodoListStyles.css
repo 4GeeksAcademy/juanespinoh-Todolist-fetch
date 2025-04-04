@@ -46,6 +46,7 @@ input:focus {
     height: 50px;
     color: black;
     border-bottom: 2px rgba(206, 202, 202, 0.851) solid;
+    border-top: 2px rgba(206, 202, 202, 0.851) solid;
     padding: 5px 10px;
 
     display: flex;
